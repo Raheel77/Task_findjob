@@ -1,0 +1,289 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+@font-face {
+    font-family: "NeueHaasDisplayRoman"  ;
+    font-display: swap ;
+    font-weight: 400 ;
+    src: url("/assets/font/NeueHaasDisplayRoman.woff") format("woff") ;
+}
+*/
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300,700&display=swap');
+
+
+
+
+
+
+body {
+    font-family: "Space Grotesk", sans-serif;
+    /*font-size: 0;*/
+}
+a{
+    text-decoration: none;
+}
+header {
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 16px 0;
+}
+
+.cus-container {
+    max-width: 1444px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo {
+    font-weight: bold;
+    margin-right: 38px
+}
+
+.nav-menu {
+    flex: 1;
+    display: flex;
+    align-items: center;
+
+}
+
+.nav-menu ul {
+    display: flex;
+    gap: 25px;
+}
+
+.nav-menu ul li {
+    list-style: none;
+}
+
+.nav-menu ul li.active a {
+    color: #0154AA;
+}
+
+.nav-menu ul li a:hover {
+    color: #0154AA;
+}
+
+.nav-menu ul li a {
+    text-decoration: none;
+    color: #737A91;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: normal;
+}
+
+.search-box {
+    position: relative;
+}
+
+.search-box input {
+    padding: 6px 30px 6px 10px;
+    padding-left: 55px;
+    border: 0;
+    width: 260px;
+    height: 39px;
+    border-radius: 8px;
+    background: #F6F9FF;
+    font-size: 14px;
+    color: #737A91;
+
+}
+
+.search-box .icon {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    width: 16px;
+    height: 16px;
+}
+
+.right-side {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.cta-button {
+    background: #0154AA;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 16px;
+    /*line-height: 1;*/
+    line-height: 19px;
+}
+
+.avatar {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-menu ul {
+        display: none;
+        flex-direction: column;
+        background: #f9f9f9;
+        width: 100%;
+        padding: 15px 0;
+        margin-top: 10px;
+        border-top: 1px solid #ddd;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .nav-menu.show ul {
+        display: flex;
+    }
+
+    .nav-menu li a {
+        padding: 8px 20px;
+        width: 100%;
+    }
+
+    .search-box {
+        width: 90%;
+        margin: 10px auto;
+    }
+
+    .right-side {
+        margin-left: auto;
+        margin-top: 10px;
+        padding-right: 10px;
+    }
+}
+
+
+/*dashboard style*/
+.dashboard {
+    background: #F4F4F4;
+    padding: 25px 0;
+}
+
+.dasboard-panel {
+    display: flex;
+    gap: 24px;
+}
+
+.dasboard-panel .profile-panel {
+    width: 346px;
+    display: flex;
+    flex-flow: column;
+    gap: 10px;
+}
+
+.dasboard-panel .jobs-panel {
+    width: calc(100% - (24px + 346px));
+
+}
+.profile-panel .profile-card{
+    overflow: hidden;
+    font-size: 0;
+    background: #fff;   border-radius: 10px;
+}
+.card-inner {
+    text-align: center;
+    padding-bottom: 20px;
+    width: 236px;
+    margin: 0 auto;
+}
+.card-inner .country{
+    font-size: 12px;
+    line-height: 14px;
+
+}
+.card-inner .desc{
+    font-size: 14px;
+    line-height: 17px;
+    margin-bottom: 5px;
+}
+.card-inner h3{
+    color: #333333;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 5px;
+}
+.card-inner .profile-avatar{
+    border-radius: 50%;
+    height: 86px    ;
+    width: 86px;
+    margin-top: -43px;
+    /*border: 2px solid   #fff;*/
+    margin-bottom: 8px;
+}
+.prof-menu ul li:first-child{
+    padding-top: 0;
+}
+.prof-menu ul li:last-child{
+    padding-bottom: 0;
+    border-bottom: 0;
+}
+.prof-menu ul li {
+    padding: 10px 0 ;
+    border-bottom: 1px solid #E9ECEF;
+}
+.prof-menu ul li .count{
+    color: #0154AA;
+    font-size: 16px;
+    line-height:19px;
+}
+.prof-menu ul li a{
+    font-size: 14px;
+    line-height: 17px;
+    color: #333333;
+    display: flex;justify-content: space-between;
+}
+.prof-menu{
+    overflow: hidden;
+    font-size: 0;
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+}
+.prof-menu{
+    overflow: hidden;
+    font-size: 0;
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+}
+.my-calender{
+    font-size: 0;
+    background: #fff;border: 1px solid #fff;
+    border-radius: 10px;
+    padding: 10px;
+}
+.my-calender h3{
+    font-size: 16px;
+    line-height: 17px;
+    color: #333333;
+}/**/
+.my-calender .upcoming-interviews{
+    font-size: 14px;
+    line-height: 17px;
+    color: #333333;
+}
+
+/*dashboard style*/
