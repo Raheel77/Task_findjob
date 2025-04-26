@@ -215,7 +215,7 @@ hr {
         gap: 20px;
     }
 }
-@media (max-width: 480px) {
+@media (max-width: 550px) {
     .search-box  {
         display: none;
     }
@@ -226,7 +226,7 @@ hr {
 /* Dashboard Styles - Start*/
 .dashboard {
     background: #F4F4F4;
-    padding: 25px 0;
+    padding: 25px 0 70px;
 }
 .dasboard-panel {
     display: flex;
@@ -651,7 +651,6 @@ hr {
     }
     .right-panel .job-search ul li:first-child{
         border-bottom: 1px solid #E9ECEF;
-
     }
     .right-panel .job-search ul li
     {
