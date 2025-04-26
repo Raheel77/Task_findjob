@@ -15,17 +15,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300,700&display=swap');
 
 
-
-
-
-
 body {
     font-family: "Space Grotesk", sans-serif;
     /*font-size: 0;*/
 }
-a{
+
+a {
     text-decoration: none;
 }
+
 header {
     background: #fff;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -197,93 +195,251 @@ header {
     width: calc(100% - (24px + 346px));
 
 }
-.profile-panel .profile-card{
+
+.profile-panel .profile-card {
     overflow: hidden;
     font-size: 0;
-    background: #fff;   border-radius: 10px;
+    background: #fff;
+    border-radius: 10px;
 }
+
 .card-inner {
     text-align: center;
     padding-bottom: 20px;
     width: 236px;
     margin: 0 auto;
 }
-.card-inner .country{
+
+.card-inner .country {
     font-size: 12px;
     line-height: 14px;
 
 }
-.card-inner .desc{
+
+.card-inner .desc {
     font-size: 14px;
     line-height: 17px;
     margin-bottom: 5px;
 }
-.card-inner h3{
+
+.card-inner h3 {
     color: #333333;
     font-weight: 500;
     font-size: 18px;
     line-height: 22px;
     margin-bottom: 5px;
 }
-.card-inner .profile-avatar{
+
+.card-inner .profile-avatar {
     border-radius: 50%;
-    height: 86px    ;
+    height: 86px;
     width: 86px;
     margin-top: -43px;
     /*border: 2px solid   #fff;*/
     margin-bottom: 8px;
 }
-.prof-menu ul li:first-child{
+
+.prof-menu ul li:first-child {
     padding-top: 0;
 }
-.prof-menu ul li:last-child{
+
+.prof-menu ul li:last-child {
     padding-bottom: 0;
     border-bottom: 0;
 }
+
 .prof-menu ul li {
-    padding: 10px 0 ;
+    padding: 10px 0;
     border-bottom: 1px solid #E9ECEF;
 }
-.prof-menu ul li .count{
+
+.prof-menu ul li .count {
     color: #0154AA;
     font-size: 16px;
-    line-height:19px;
+    line-height: 19px;
 }
-.prof-menu ul li a{
+
+.prof-menu ul li a {
     font-size: 14px;
     line-height: 17px;
     color: #333333;
-    display: flex;justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
 }
-.prof-menu{
+
+.prof-menu {
     overflow: hidden;
     font-size: 0;
     background: #fff;
     border-radius: 10px;
     padding: 20px;
 }
-.prof-menu{
+
+.prof-menu {
     overflow: hidden;
     font-size: 0;
     background: #fff;
     border-radius: 10px;
     padding: 20px;
 }
-.my-calender{
+
+.my-calender {
     font-size: 0;
-    background: #fff;border: 1px solid #fff;
+    background: #fff;
+    border: 1px solid #fff;
     border-radius: 10px;
     padding: 10px;
+    background: url('../images/angle-down.svg') 95% center no-repeat #fff;
 }
-.my-calender h3{
+
+.my-calender h3 {
     font-size: 16px;
-    line-height: 17px;
+    line-height: 19px;
     color: #333333;
-}/**/
-.my-calender .upcoming-interviews{
+}
+
+/**/
+.my-calender .upcoming-interviews {
     font-size: 14px;
     line-height: 17px;
-    color: #333333;
+    color: #737A91;
 }
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.job-search {
+    max-width: 900px;
+    margin: auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.job-search input[type="search"],
+.job-search select {
+    padding: 10px 12px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    flex: 1;
+    min-width: 150px;
+}
+
+.job-search button {
+    background: #2563eb;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.job-search button:hover {
+    background: #1e40af;
+}
+
+@media (max-width: 600px) {
+    .job-search {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .job-search input,
+    .job-search select,
+    .job-search button {
+        width: 100%;
+    }
+}
+
+
+/*job-card*/
+.job-card {
+     background-color: #ffffff;
+    border : 1px solid #e1e1e1;
+    justify-content: start;
+    align-items: start;
+    border-radius: 10px;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px 10px 20px;
+}
+
+.job-card .top-panel {
+    gap: 5px;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+}
+
+.job-card .top-panel .label {
+    color: #333333;
+    font-size: 10px;
+    font-weight: 600;
+    text-align: left;
+}
+
+.job-card  .inner-row .title-area {
+     display: flex;
+    flex-flow: column;
+}
+
+.job-card  .inner-row {
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+    display: flex;
+}
+
+.job-card .title-lg {
+    color: #585d6e;
+    font-size: 12px;
+    text-align: left;
+}
+
+.job-card .title-sm {
+    font-size: 12px;
+    text-align: left;
+}
+
+.job-region {
+    align-items: start;
+    gap: 10px;
+    display: flex;
+}
+
+.job-card .bottom-panel {
+    align-items: center;
+    gap: 20px;
+    display: flex;
+}
+.job-card .cta-btn {
+    background-color: #0154aa;
+    align-items: start;
+    gap: 10px;
+    display: flex;
+    flex-flow: column;
+    padding: 10px 30px 10px 30px;
+    border-radius: 6px;
+    color: #ffffff;
+    font-size: 12px;
+    text-align: left;
+}
+
+
+/*job-card*/
 
 /*dashboard style*/
