@@ -95,104 +95,210 @@
                     <div class="upcoming-interviews"> Upcoming Interviews</div>
                 </div>
             </div>
-            <div class="jobs-panel">
+            <div class="right-panel">
                 <div class="head">
-                    <h2>Find your Dream Job, Albert!</h2>
+                    <h2>Find your Dream Job, <span>Albert!</span></h2>
                     <p>Explore the latest job openings and apply for the best opportunities available today! </p>
                 </div>
                 <div class="job-search">
-
-                    <input type="search" placeholder="Search job title, keywords...">
-
-                    <select>
-                        <option value="">Select Location</option>
-                        <option>New York</option>
-                        <option>London</option>
-                        <option>Berlin</option>
-                        <option>Remote</option>
-                    </select>
-
-                    <select>
-                        <option value="">Job Type</option>
-                        <option>Full-time</option>
-                        <option>Part-time</option>
-                        <option>Internship</option>
-                        <option>Contract</option>
-                    </select>
-
-                    <button>Search</button>
-
-                    <div class="similar-jobs">
-                        <div class="title">Similar:</div>
-                        <ul>
-                            <li> Frontend</li>
-                            <li> Backend</li>
-                            <li> Graphic Designer</li>
-                        </ul>
+                    <div class="left-area">
+                        <input type="search" placeholder="Job Title, Company, or Keywords">
                     </div>
-                    <div class="jobs-panel">
-                        <div class="title">Featured Jobs <a href="">See Featured Jobs</a></div>
-                        <div class="jobs-area">
-                            <div class="job-card">
+                    <div class="right-area">
+                        <ul>
+                            <li>
+                                <select>
+                                    <option value="">Select Location</option>
+                                    <option>New York</option>
+                                    <option>London</option>
+                                    <option>Berlin</option>
+                                    <option>Remote</option>
+                                </select>
+                            </li>
+                            <li>
+                                <select>
+                                    <option value="">Job Type</option>
+                                    <option>Full-time</option>
+                                    <option>Part-time</option>
+                                    <option>Internship</option>
+                                    <option>Contract</option>
+                                </select></li>
+                        </ul>
+                        <button class="cta-button search-icon" type="submit">Search</button>
 
-                                <div class="top-panel">
-                                    <div class="label">Promoted</div>
-                                    <div class="inner-row">
-                                        <img width="40" src="./assets/images/ui-ux-icon.svg" alt="UI/UX Designer">
-                                        <div class="title-area">
-                                            <div class="title-lg">UI/UX Designer</div>
-                                            <div class="title-sm">Teams</div>
-                                        </div>
-                                    </div>
-                                    <div class="job-region">
-                                        <img width="12" src="./assets/images/location-icon.svg" alt="UI/UX Designer">
-                                        <div class="title-area">
-                                            <div class="title-lg">Seattle, USA (Remote)</div>
-                                            <div class="title-sm">1 day ago | 22 applicants</div>
-                                        </div>
-                                    </div>
+                    </div>
 
+
+                </div>
+                <div class="similar-jobs">
+                    <div class="title">Similar:</div>
+                    <ul>
+                        <li><a href="#">Frontend</a></li>
+                        <li><a href="#">Backend</a></li>
+                        <li><a href="#"> Graphic Designer</a></li>
+                    </ul>
+                </div>
+                <div class="jobs-panel">
+                    <div class="heading">Featured Jobs <a href="">See Featured Jobs</a></div>
+                    <div class="jobs-area">
+                        <div class="job-card">
+                            <div class="top-panel">
+                                <div class="label">Promoted</div>
+                                <div class="inner-row">
+                                    <img width="40" src="./assets/images/ui-ux-icon.svg" alt="UI/UX Designer">
+                                    <div class="title-area">
+                                        <div class="title-lg" title="UI/UX Designer">UI/UX Designer</div>
+                                        <div class="title-sm">Teams</div>
+                                    </div>
                                 </div>
-                                <div class="bottom-panel">
-                                    <div class="cta-btn">
-                                        Apply Now
+                                <div class="job-region">
+                                    <div>
+                                        <img width="12" src="./assets/images/location-icon.svg" alt="UI/UX Designer">
+                                        <div class="title-lg ">
+                                            Seattle, USA (Remote)
+                                        </div>
                                     </div>
-                                    <svg
-                                            width="14"
-                                            height="18"
-                                            viewBox="0 0 14 18"
-                                            fill="none"
-                                            xmlns="http://www.w3.org/2000/svg"
-                                    >
-                                        <path
-                                                d="M1 3.91489C1 2.89471 1 2.38462 1.20762 1.99477C1.39023 1.652 1.68161 1.37332 2.04 1.19866C2.44762 1.00009 2.98095 1.00009 4.04762 1.00009H9.38095C10.4476 1.00009 10.981 1.00009 11.3886 1.19866C11.747 1.37332 12.0383 1.652 12.221 1.99477C12.4286 2.38462 12.4286 2.89471 12.4286 3.91489V16.0341C12.4286 16.4768 12.4286 16.6981 12.3324 16.8193C12.2908 16.872 12.2378 16.9154 12.1769 16.9465C12.1161 16.9777 12.0489 16.9958 11.98 16.9996C11.821 17.0087 11.6286 16.8858 11.2438 16.6407L6.71429 13.7523L2.18476 16.6398C1.8 16.8858 1.60762 17.0087 1.44762 16.9996C1.37889 16.9956 1.31188 16.9775 1.25121 16.9463C1.19054 16.9152 1.13765 16.8718 1.09619 16.8193C1 16.6981 1 16.4768 1 16.0341V3.91489Z"
-                                                stroke="#AAAAAA"
-                                                stroke-width="1.5"
-                                                stroke-linecap="round"
-                                                stroke-linejoin="round"
-                                        ></path>
-                                    </svg>
+                                    <div>
+                                        <img width="12" src="./assets/images/clock-icon.svg" alt="UI/UX Designer">
+                                        <div class="title-sm"> 1 day ago | <a href="#">22 applicants</a>
+                                        </div>
+
+                                    </div>
                                 </div>
 
                             </div>
-                            <a class="job-card">
-                                <span class="label">Promoted</span>
-                                    <span class="job-name">
-                                    <span class="icon"></span>
-                                    <span class="title">
-                                        UI/UX Designer
-                                        <span>Teams</span>
-                                    </span>
-                                    <img src="./assets/images/ui-ux-icon.svg" alt="UI/UX Designer">
-                                </span>
+                            <div class="bottom-panel">
+                                <div class="cta-button">Apply Now</div>
+                                <img width="14" class="bookmark-icon" src="./assets/images/bookmark-icon.svg" alt="UI/UX Designer">
+                            </div>
+                        </div>
+                        <div class="job-card">
+                            <div class="top-panel">
+                                <div class="label">Promoted</div>
+                                <div class="inner-row">
+                                    <img width="40" src="./assets/images/ui-ux-icon.svg" alt="UI/UX Designer">
+                                    <div class="title-area">
+                                        <div class="title-lg" title="UI/UX Designer">UI/UX Designer</div>
+                                        <div class="title-sm">Teams</div>
+                                    </div>
+                                </div>
+                                <div class="job-region">
+                                    <div>
+                                        <img width="12" src="./assets/images/location-icon.svg" alt="UI/UX Designer">
+                                        <div class="title-lg ">
+                                            Seattle, USA (Remote)
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <img width="12" src="./assets/images/clock-icon.svg" alt="UI/UX Designer">
+                                        <div class="title-sm"> 1 day ago | <a href="#">22 applicants</a>
+                                        </div>
 
-                                Seattle, USA (Remote)
-                                1 day ago | 22 applicants
-                                Apply Now
-                            </a>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="bottom-panel">
+                                <div class="cta-button">Apply Now</div>
+                                <img width="14" class="bookmark-icon" src="./assets/images/bookmark-icon.svg" alt="UI/UX Designer">
+                            </div>
+                        </div>
+                        <div class="job-card">
+                            <div class="top-panel">
+                                <div class="label">Promoted</div>
+                                <div class="inner-row">
+                                    <img width="40" src="./assets/images/ui-ux-icon.svg" alt="UI/UX Designer">
+                                    <div class="title-area">
+                                        <div class="title-lg" title="UI/UX Designer">UI/UX Designer</div>
+                                        <div class="title-sm">Teams</div>
+                                    </div>
+                                </div>
+                                <div class="job-region">
+                                    <div>
+                                        <img width="12" src="./assets/images/location-icon.svg" alt="UI/UX Designer">
+                                        <div class="title-lg ">
+                                            Seattle, USA (Remote)
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <img width="12" src="./assets/images/clock-icon.svg" alt="UI/UX Designer">
+                                        <div class="title-sm"> 1 day ago | <a href="#">22 applicants</a>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="bottom-panel">
+                                <div class="cta-button">Apply Now</div>
+                                <img width="14" class="bookmark-icon" src="./assets/images/bookmark-icon.svg" alt="UI/UX Designer">
+                            </div>
+                        </div>
+                        <div class="job-card">
+                            <div class="top-panel">
+                                <div class="label">Promoted</div>
+                                <div class="inner-row">
+                                    <img width="40" src="./assets/images/ui-ux-icon.svg" alt="UI/UX Designer">
+                                    <div class="title-area">
+                                        <div class="title-lg" title="UI/UX Designer">UI/UX Designer</div>
+                                        <div class="title-sm">Teams</div>
+                                    </div>
+                                </div>
+                                <div class="job-region">
+                                    <div>
+                                        <img width="12" src="./assets/images/location-icon.svg" alt="UI/UX Designer">
+                                        <div class="title-lg ">
+                                            Seattle, USA (Remote)
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <img width="12" src="./assets/images/clock-icon.svg" alt="UI/UX Designer">
+                                        <div class="title-sm"> 1 day ago | <a href="#">22 applicants</a>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="bottom-panel">
+                                <div class="cta-button">Apply Now</div>
+                                <img width="14" class="bookmark-icon" src="./assets/images/bookmark-icon.svg" alt="UI/UX Designer">
+                            </div>
+                        </div>
+                        <div class="job-card">
+                            <div class="top-panel">
+                                <div class="label">Promoted</div>
+                                <div class="inner-row">
+                                    <img width="40" src="./assets/images/ui-ux-icon.svg" alt="UI/UX Designer">
+                                    <div class="title-area">
+                                        <div class="title-lg" title="UI/UX Designer">UI/UX Designer</div>
+                                        <div class="title-sm">Teams</div>
+                                    </div>
+                                </div>
+                                <div class="job-region">
+                                    <div>
+                                        <img width="12" src="./assets/images/location-icon.svg" alt="UI/UX Designer">
+                                        <div class="title-lg ">
+                                            Seattle, USA (Remote)
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <img width="12" src="./assets/images/clock-icon.svg" alt="UI/UX Designer">
+                                        <div class="title-sm"> 1 day ago | <a href="#">22 applicants</a>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="bottom-panel">
+                                <div class="cta-button">Apply Now</div>
+                                <img width="14" class="bookmark-icon" src="./assets/images/bookmark-icon.svg" alt="UI/UX Designer">
+                            </div>
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
     </div>
