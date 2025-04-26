@@ -266,6 +266,11 @@ hr {
     line-height: 17px;
     margin-bottom: 5px;
     color: #333333;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;  /* Number of lines to show */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 .card-inner h3 {
     color: #333333;
