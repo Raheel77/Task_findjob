@@ -401,13 +401,14 @@ hr {
 .right-panel .job-search select {
     height: 37px;
     width: 100%;
-    background: transparent;
     border: 0;
+    -webkit-appearance: none;
+    appearance: none;
     min-width: 120px;
     outline: none;
     font-size: 14px;
     line-height: 17px;
-    color: #585D6E; /*background: url('../images/angle-down.svg') 95% center no-repeat #fff;*/
+    color: #585D6E; background: url('../images/angle-down.svg') 100% center no-repeat #fff;
 }
 .right-panel .job-search .cta-button.search-icon:before {
     content: "";
