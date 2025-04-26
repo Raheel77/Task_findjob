@@ -1,9 +1,23 @@
 function toggleMenu() {
-    document.querySelector('.nav-center').classList.toggle('show');
 }
 
 
+
+
+
+
+
+
+
 document.addEventListener('DOMContentLoaded', function () {
+
+
+
+    document.querySelector('.menu-toggle').addEventListener('click', function () {
+        document.querySelector('.nav-menu').classList.toggle('show');
+    });
+
+
     const bookmarkIcons = document.querySelectorAll('.bookmark-icon');
 
     bookmarkIcons.forEach(function (icon) {
